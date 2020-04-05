@@ -1,5 +1,5 @@
 <h4 align="center">
-<img src="./img/logo.svg" width="250px" /><br>
+<img src="./img/logo.svg" width="400px" alt="logo" /><br>
  <b>Be a hero!</b> 🦸‍♂️
 </h4>
 <p align="center">
@@ -37,5 +37,9 @@ This project was made with the following technologies:
 ### :memo: License
 
 This project is developed unde the MIT license. See the [LICENSE](LICENSE.md) file to know more details.
+
+<p align="center">
+  <img src="./img/heroes.png" width="400px" alt="heroes"/>
+</p>
 
 <p align="center">Made with ❤️ by <strong> Joao Victor Farias </p>
