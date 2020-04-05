@@ -30,7 +30,7 @@ This project was made with the following technologies:
 - [Yup](https://github.com/jquense/yup)
 - [Sucrase](https://sucrase.io/)
 
-### :fire: Projeto
+### :fire: Project
 
 <b>Be the Hero</b> it's a project that focus on helping ONGs to raise fundings for theis projects.
 
