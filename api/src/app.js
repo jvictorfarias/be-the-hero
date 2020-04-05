@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import routes from './routes';
 import log from './app/middlewares/log';
+import 'dotenv/config';
 
 class App {
   constructor() {
