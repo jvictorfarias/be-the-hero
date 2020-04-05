@@ -17,7 +17,9 @@
     "sucrase": "^3.13.0"
   },
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.13",
     "morgan": "^1.10.0",
     "ora": "^4.0.3",

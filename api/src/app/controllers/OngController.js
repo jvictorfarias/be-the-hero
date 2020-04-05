@@ -1,15 +1,19 @@
 import crypto from 'crypto';
+import bcrypt from 'bcrypt';
 import connection from '../../database';
 
 class OngController {
   async store(req, res) {
-    const { name, email, whatsapp, city, uf } = req.body;
+    const { name, email, password, whatsapp, city, uf } = req.body;
     const id = crypto.randomBytes(4).toString('hex');
+
+    const password_hash = await bcrypt.hash(password, 8);
 
     const response = await connection('ongs').insert({
       id,
       name,
       email,
+      password_hash,
       whatsapp,
       city,
       uf,
