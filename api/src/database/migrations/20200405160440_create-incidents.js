@@ -1,6 +1,6 @@
 exports.up = (knex) => {
-  knex.schema.createTable('incidents', (table) => {
-    table.incerements();
+  return knex.schema.createTable('incidents', (table) => {
+    table.increments();
     table.string('title').notNullable();
     table.string('description').notNullable();
     table.decimal('value').notNullable();
@@ -10,5 +10,5 @@ exports.up = (knex) => {
 };
 
 exports.down = (knex) => {
-  knex.schema.dropTable('incidents');
+  return knex.schema.dropTable('incidents');
 };
