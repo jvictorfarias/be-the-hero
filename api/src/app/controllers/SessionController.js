@@ -10,7 +10,7 @@ class SessionController {
 
     const ong = await connection('ongs')
       .where('email', email)
-      .select('name', 'password_hash')
+      .select('id', 'name', 'password_hash')
       .first();
 
     if (!ong) {
