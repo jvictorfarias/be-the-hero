@@ -13,7 +13,7 @@
 
 ### :rocket: Technologies used
 
-Este maravilindo projeto foi desenvolvido com as seguintes tecnologias:
+This project was made with the following technologies:
 
 - [Node.js](https://nodejs.org/en/)
 - [React.js](https://pt-br.reactjs.org/)
@@ -32,7 +32,7 @@ Este maravilindo projeto foi desenvolvido com as seguintes tecnologias:
 
 ### :fire: Projeto
 
-<b>Be the Hero</b> é um projeto que visa ajudar, de maneira <b>financeira</b> uma instituição de caridade, ajudando a mesma se manter.
+<b>Be the Hero</b> it's a project that focus on helping ONGs to raise fundings for theis projects.
 
 ### :memo: License
 
