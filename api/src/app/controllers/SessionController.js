@@ -1,11 +1,20 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+import * as Yup from 'yup';
 import connection from '../../database';
 
 import authConfig from '../../config/auth';
 
 class SessionController {
   async store(req, res) {
+    const schema = Yup.object().shape({
+      email: Yup.string().email().required(),
+      password: Yup.string().min(8).max(30),
+    });
+
+    if (!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: 'Data validation failed' });
+    }
     const { email, password } = req.body;
 
     const ong = await connection('ongs')

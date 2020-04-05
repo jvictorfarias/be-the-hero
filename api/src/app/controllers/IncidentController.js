@@ -1,7 +1,18 @@
+import * as Yup from 'yup';
 import connection from '../../database';
 
 class IncidentController {
   async store(req, res) {
+    const schema = Yup.object().shape({
+      title: Yup.string().required(),
+      description: Yup.string(),
+      value: Yup.number(),
+    });
+
+    if (!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: 'Data validation failed' });
+    }
+
     const { title, description, value } = req.body;
 
     const ong_id = req.ongId;
@@ -21,7 +32,24 @@ class IncidentController {
   }
 
   async index(req, res) {
-    const incidents = await connection('incidents').select('*');
+    const { page = 1 } = req.query;
+
+    const [count] = await connection('incidents').count();
+
+    const incidents = await connection('incidents')
+      .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
+      .limit(5)
+      .offset((page - 1) * 5)
+      .select([
+        'incidents.*',
+        'ongs.name',
+        'ongs.email',
+        'ongs.whatsapp',
+        'ongs.city',
+        'ongs.uf',
+      ]);
+
+    res.header('X-Total-Count', count['count(*)']);
 
     if (!incidents) {
       return res.status(400).json({ error: 'error' });
