@@ -5,6 +5,8 @@ import IncidentController from './app/controllers/IncidentController';
 import ProfileController from './app/controllers/ProfileController';
 import SessionController from './app/controllers/SessionController';
 
+import authMiddleware from './app/middlewares/auth';
+
 const routes = new Router();
 
 // Routes for ONGs
@@ -15,12 +17,12 @@ routes.get('/ongs', OngController.index);
 routes.post('/session', SessionController.store);
 
 // Ong profile
-routes.get('/profile', ProfileController.index);
+routes.get('/profile', authMiddleware, ProfileController.index);
 
 // Routes for incidents
+routes.post('/incidents', authMiddleware, IncidentController.store);
+routes.delete('/incidents/', authMiddleware, IncidentController.delete);
 
-routes.post('/incidents', IncidentController.store);
 routes.get('/incidents', IncidentController.index);
-routes.delete('/incidents/:id', IncidentController.delete);
 
 export default routes;

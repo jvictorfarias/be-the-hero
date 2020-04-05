@@ -1,6 +1,6 @@
 import express from 'express';
 import routes from './routes';
-import log from './middlewares/log';
+import log from './app/middlewares/log';
 
 class App {
   constructor() {
