@@ -29,10 +29,11 @@ This project was made with the following technologies:
 - [Knex](http://knexjs.org/)
 - [Yup](https://github.com/jquense/yup)
 - [Sucrase](https://sucrase.io/)
+- [Styled-Components](https://styled-components.com/)
 
 ### :fire: Project
 
-<b>Be the Hero</b> it's a project that focus on helping ONGs to raise fundings for theis projects.
+<b>Be the Hero</b> it's a project that focus on helping ONGs to raise fundings for their projects.
 
 ### :memo: License
 
