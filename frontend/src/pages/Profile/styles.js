@@ -5,6 +5,11 @@ export const ProfileContainer = styled.div`
   max-width: 1180px;
   padding: 0 30px;
   margin: 32px auto;
+
+  h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const ProfileHeader = styled.header`
@@ -15,7 +20,7 @@ export const ProfileHeader = styled.header`
     margin-top: 0;
     margin-left: auto;
 
-    & > button {
+    button {
       width: 260px;
     }
   }
@@ -40,6 +45,49 @@ export const ProfileHeader = styled.header`
 
     &:hover {
       border-color: #999;
+    }
+  }
+`;
+
+export const CaseList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  list-style: none;
+
+  li {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+
+    button {
+      background: transparent;
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      border: 0;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 16px;
+      color: #41414d;
+
+      &:not(:first-child) {
+        margin-top: 32px;
+      }
+    }
+
+    p {
+      color: #737380;
+      line-height: 21px;
+      font-size: 16px;
     }
   }
 `;
