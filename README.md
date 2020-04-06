@@ -13,8 +13,6 @@
 
 ### :rocket: Technologies used
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/129d5c81fed84282a29f6a8f382f17c7)](https://app.codacy.com/manual/jvictorfarias/be-the-hero?utm_source=github.com&utm_medium=referral&utm_content=jvictorfarias/be-the-hero&utm_campaign=Badge_Grade_Dashboard)
-
 This project was made with the following technologies:
 
 - [Node.js](https://nodejs.org/en/)
