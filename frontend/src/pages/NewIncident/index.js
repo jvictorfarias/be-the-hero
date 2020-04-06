@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 import { FiArrowLeft } from 'react-icons/fi';
 import logoImg from '../../assets/logo.svg';
@@ -14,7 +14,34 @@ import {
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 
+import api from '../../services/api';
+
 export default function NewIncident() {
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [value, setValue] = useState('');
+
+  const history = useHistory();
+
+  async function handleNewIncident(e) {
+    e.preventDefault();
+
+    try {
+      const token = JSON.parse(localStorage.getItem('token'));
+
+      const data = { title, description, value };
+      await api.post('/incidents', data, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      history.push('/profile');
+    } catch (error) {
+      alert('error');
+    }
+  }
+
   return (
     <IncidentContainer>
       <IncidentContent>
@@ -26,10 +53,25 @@ export default function NewIncident() {
             <FiArrowLeft /> Voltar para home
           </Link>
         </section>
-        <IncidentForm>
-          <Input placeholder="Titulo do caso" />
-          <textarea placeholder="Descrição" />
-          <Input placeholder="Valor em reais" />
+        <IncidentForm onSubmit={handleNewIncident}>
+          <Input
+            value={title}
+            type="text"
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Titulo do caso"
+          />
+          <textarea
+            type="text"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder="Descrição"
+          />
+          <Input
+            type="number"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            placeholder="Valor em reais"
+          />
           <IncidentButtons>
             <Button>Cadastrar</Button>
           </IncidentButtons>
