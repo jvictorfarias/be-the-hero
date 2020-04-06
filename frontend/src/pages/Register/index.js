@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import {
   RegisterContainer,
@@ -21,8 +21,25 @@ export default function Register() {
   const [city, setCity] = useState('');
   const [uf, setUf] = useState('');
 
-  function handleRegister(e) {
+  const history = useHistory();
+
+  async function handleRegister(e) {
     e.preventDefault();
+
+    try {
+      await api.post('/ongs', {
+        name,
+        email,
+        password,
+        whatsapp,
+        city,
+        uf,
+      });
+
+      history.push('/');
+    } catch (error) {
+      alert('Erro no cadastro, tente novamente');
+    }
   }
 
   /**
