@@ -26,4 +26,24 @@ export const LogonForm = styled.form`
     font-size: 32px;
     margin-bottom: 32px;
   }
+
+  a {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: filter 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    svg {
+      color: #e02041;
+      margin-right: 10px;
+    }
+  }
 `;
