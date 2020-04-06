@@ -9,8 +9,12 @@ const Input = styled.input.attrs((props) => ({
   color: #333;
   border: 1px solid #dcdce6;
   border-radius: 8px;
-  margin: 2px 2px;
+  margin: 2px 0;
   padding: 0 24px;
+
+  & + input:last-child {
+    margin-left: 6px;
+  }
 `;
 
 export default Input;

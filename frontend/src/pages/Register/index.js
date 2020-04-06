@@ -33,6 +33,7 @@ export default class Register extends Component {
             <Input placeholder="Nome da ONG" />
             <Input type="email" placeholder="Email" />
             <Input placeholder="Senha" />
+            <Input placeholder="WhatsApp" />
 
             <RegisterInputAddress>
               <Input placeholder="Cidade" />
