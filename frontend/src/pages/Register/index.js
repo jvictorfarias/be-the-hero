@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import { store } from 'react-notifications-component';
 import { FiArrowLeft } from 'react-icons/fi';
 import {
   RegisterContainer,
@@ -36,9 +37,35 @@ export default function Register() {
         uf,
       });
 
+      store.addNotification({
+        title: 'Sucesso!',
+        message: 'Cadastro realizado.',
+        type: 'success',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animated', 'fadeIn'],
+        animationOut: ['animated', 'fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      });
+
       history.push('/');
     } catch (error) {
-      alert('Erro no cadastro, tente novamente');
+      store.addNotification({
+        title: 'Erro!',
+        message: 'Alguma coisa deu errado...',
+        type: 'danger',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animated', 'fadeIn'],
+        animationOut: ['animated', 'fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      });
     }
   }
 

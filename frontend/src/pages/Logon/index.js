@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
+import { store } from 'react-notifications-component';
 import { LogonContainer, LogonForm } from './styles';
+
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 
@@ -30,36 +32,50 @@ export default function Logon() {
 
       history.push('/profile');
     } catch (error) {
-      alert('Authentication failed');
+      store.addNotification({
+        title: 'Erro!',
+        message: 'Email ou senha incorretas.',
+        type: 'danger',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animated', 'fadeIn'],
+        animationOut: ['animated', 'fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      });
     }
   }
 
   return (
-    <LogonContainer>
-      <section className="form">
-        <img src={logoImg} alt="logo" />
-        <LogonForm onSubmit={handleSubmit}>
-          <h1>Faça seu logon</h1>
-          <Input
-            type="email"
-            placeholder="Digite seu email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <Input
-            type="password"
-            placeholder="Digite sua senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <Button>Entrar</Button>
-          <Link to="/register">
-            <FiLogIn />
-            Não tenho cadastro
-          </Link>
-        </LogonForm>
-      </section>
-      <img src={heroesImg} alt="heroes" />
-    </LogonContainer>
+    <>
+      <LogonContainer>
+        <section className="form">
+          <img src={logoImg} alt="logo" />
+          <LogonForm onSubmit={handleSubmit}>
+            <h1>Faça seu logon</h1>
+            <Input
+              type="email"
+              placeholder="Digite seu email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <Input
+              type="password"
+              placeholder="Digite sua senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <Button>Entrar</Button>
+            <Link to="/register">
+              <FiLogIn />
+              Não tenho cadastro
+            </Link>
+          </LogonForm>
+        </section>
+        <img src={heroesImg} alt="heroes" />
+      </LogonContainer>
+    </>
   );
 }

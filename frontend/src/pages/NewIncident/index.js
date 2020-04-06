@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import { store } from 'react-notifications-component';
 
 import { FiArrowLeft } from 'react-icons/fi';
 import logoImg from '../../assets/logo.svg';
@@ -36,9 +37,35 @@ export default function NewIncident() {
         },
       });
 
+      store.addNotification({
+        title: 'Sucesso!',
+        message: 'Incidente adicionado.',
+        type: 'success',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animated', 'fadeIn'],
+        animationOut: ['animated', 'fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      });
+
       history.push('/profile');
     } catch (error) {
-      alert('error');
+      store.addNotification({
+        title: 'Erro!',
+        message: 'Dados inválidos',
+        type: 'danger',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animated', 'fadeIn'],
+        animationOut: ['animated', 'fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      });
     }
   }
 

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
+import { store } from 'react-notifications-component';
 import { ProfileContainer, ProfileHeader, CaseList } from './styles';
+
 import Button from '../../components/Button';
 
 import logoImg from '../../assets/logo.svg';
@@ -26,7 +28,19 @@ export default function Profile() {
         });
         setIncidents(response.data.incidents);
       } catch (error) {
-        console.log(error);
+        store.addNotification({
+          title: 'Erro!',
+          message: 'Alguma coisa deu errado...',
+          type: 'danger',
+          insert: 'top',
+          container: 'top-right',
+          animationIn: ['animated', 'fadeIn'],
+          animationOut: ['animated', 'fadeOut'],
+          dismiss: {
+            duration: 5000,
+            onScreen: true,
+          },
+        });
       }
     }
     fetchData();
@@ -42,7 +56,19 @@ export default function Profile() {
 
       setIncidents(incidents.filter((incident) => incident.id !== id));
     } catch (error) {
-      alert('Erro ao deletar');
+      store.addNotification({
+        title: 'Erro!',
+        message: 'Alguma coisa deu errado...',
+        type: 'danger',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animated', 'fadeIn'],
+        animationOut: ['animated', 'fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      });
     }
   }
 
