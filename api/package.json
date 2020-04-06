@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "build": "sucrase-node src/server.js"
+    "start": "sucrase-node src/server.js"
   },
   "engines": {
     "node": "12.16.x",
