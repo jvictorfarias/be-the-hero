@@ -7,8 +7,8 @@ const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'light';
   return (
     <ToggleContainer onClick={toggleTheme} lightTheme={isLight}>
-      <FiMoon />
       <FiSun />
+      <FiMoon />
     </ToggleContainer>
   );
 };
