@@ -1,13 +1,10 @@
-<h4 align="center">
+<h4 align="center" style="border-bottom: 1px solid #eee">
 <img src="./img/logo.svg" width="400px" alt="logo" /><br>
  <b>Be a hero!</b> 🦸‍♂️
 </h4>
-<p align="center">
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-red">
-  </a>
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
-</p>
+
+[![The MIT License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/jvictorfarias/be-the-hero/blob/master/LICENSE.md)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/749225ed-51f3-4f2b-85be-5a8eb32897f0/deploy-status)](https://app.netlify.com/sites/bethehero-jvictorfarias/deploys)
 
 <br>
 
