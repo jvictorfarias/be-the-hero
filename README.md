@@ -21,6 +21,7 @@
 ![Demo](img/preview.gif)
 
 </div>
+
 ### :rocket: Technologies used
 
 This project was made with the following technologies:
