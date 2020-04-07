@@ -1,1 +1,0 @@
-web: yarn sucrase-node src/server.js
