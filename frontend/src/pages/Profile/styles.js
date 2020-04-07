@@ -15,6 +15,7 @@ export const ProfileContainer = styled.div`
 export const ProfileHeader = styled.header`
   display: flex;
   align-items: center;
+  margin-right: 80px;
 
   a {
     margin-top: 0;
