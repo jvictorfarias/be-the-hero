@@ -9,6 +9,10 @@ import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
 
+routes.get('/', (req, res) => {
+  return res.json({ Owner: 'Joao Victor Farias' });
+});
+
 // Routes for ONGs
 routes.post('/ongs', OngController.store);
 routes.get('/ongs', OngController.index);
