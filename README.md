@@ -38,8 +38,8 @@ This project was made with the following technologies:
 
 This project is developed unde the MIT license. See the [LICENSE](LICENSE.md) file to know more details.
 
-<p align="center">
-  <img src="./img/heroes.png" width="400px" alt="heroes" style="margin-top: 20px;"/>
+<p align="center" style="margin-top: 20px;">
+  <img src="./img/heroes.png" width="400px" alt="heroes" />
 </p>
 
 <p align="center" style="margin-top: 20px;">Made with ❤️ by <strong> Joao Victor Farias </p>

@@ -38,7 +38,6 @@ export const ProfileHeader = styled.header`
     width: 60px;
     height: 60px;
     border-radius: 4px;
-    border: 1px solid #dcdce6;
     background: transparent;
     margin-left: 16px;
     transition: border-color 0.2s;
@@ -56,7 +55,9 @@ export const CaseList = styled.ul`
   list-style: none;
 
   li {
-    background: #fff;
+    background: ${({ theme }) => theme.foreground};
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+
     padding: 24px;
     border-radius: 8px;
     position: relative;
@@ -77,7 +78,7 @@ export const CaseList = styled.ul`
     strong {
       display: block;
       margin-bottom: 16px;
-      color: #41414d;
+      color: ${({ theme }) => theme.link};
 
       &:not(:first-child) {
         margin-top: 32px;
@@ -85,7 +86,7 @@ export const CaseList = styled.ul`
     }
 
     p {
-      color: #737380;
+      color: ${({ theme }) => theme.text};
       line-height: 21px;
       font-size: 16px;
     }
