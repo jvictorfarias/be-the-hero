@@ -14,16 +14,20 @@
 
 <br>
 
+### :fire: Preview
+
+<div align="center">
+
+![Demo](img/preview.gif)
+
+</div>
 ### :rocket: Technologies used
 
 This project was made with the following technologies:
 
 - [NodeJS](https://nodejs.org/en/)
 - [ReactJS](https://pt-br.reactjs.org/)
-- [ReactNative](https://reactnative.dev/)
-- [Expo](https://expo.io/)
 - [ExpressJS](https://expressjs.com/pt-br/)
-- [Jest](https://www.npmjs.com/package/jest)
 - [JWT](https://jwt.io/)
 - [Knex](http://knexjs.org/)
 - [Yup](https://github.com/jquense/yup)
