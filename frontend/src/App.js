@@ -6,8 +6,6 @@ import Routes from './routes';
 import 'react-notifications-component/dist/theme.css';
 import 'animate.css';
 
-import 'dotenv/config';
-
 function App() {
   return (
     <>
