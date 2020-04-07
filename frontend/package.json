@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "animate.css": "^3.7.2",
     "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.9.0",
