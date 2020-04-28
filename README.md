@@ -11,11 +11,11 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/749225ed-51f3-4f2b-85be-5a8eb32897f0/deploy-status)](https://app.netlify.com/sites/bethehero-jvictorfarias/deploys)
 
 <p align="center">
-  <a href="#-sobre-o-projeto"> :bookmark_tabs: Sobre o Projeto</a> |
-  <a href="#-prévia"> :fire: Prévia da Aplicação</a> |
+  <a href="#bookmark_tabs-sobre-o-projeto"> :bookmark_tabs: Sobre o Projeto</a> |
+  <a href="#-previa"> :fire: Prévia da Aplicação</a> |
   <a href="#-project"> :rocket: Tecnologias Usadas</a> |
-  <a href="#-how-to-contribute">🤔 How to contribute</a> |
-  <a href="#-how-to-run">🔖 How to run </a> |
+  <a href="#-how-to-contribute">🤔 Como Contribuir?</a> |
+  <a href="#-how-to-run">🔖 Executando o Projeto </a> |
 </p>
 
 
@@ -49,7 +49,7 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 - [Styled-Components](https://styled-components.com/)
 
 
-## :outbox_tray: Como Contribuir?
+## 🤔 Como Contribuir?
 
 
 ## :hammer: Executando o Projeto
