@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const ToggleContainer = styled.button`
   background: ${({ theme }) => theme.background};
   border: 2px solid ${({ theme }) => theme.borderColor};
+  flex: 1;
   border-radius: 30px;
   cursor: pointer;
   display: flex;
   font-size: 0.5rem;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 20px 20px;
   overflow: hidden;
   padding: 0.5rem;
   position: absolute;
