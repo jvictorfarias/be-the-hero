@@ -10,7 +10,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jvictorfarias/be-the-hero)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/749225ed-51f3-4f2b-85be-5a8eb32897f0/deploy-status)](https://app.netlify.com/sites/bethehero-jvictorfarias/deploys)
 
-<p align="center">
+<p align="center" style="font-size: 12px;">
   <a href="#bookmark_tabs-sobre-o-projeto"> :bookmark_tabs: Sobre o Projeto</a> |
   <a href="#fire-prévia-da-aplicação"> :fire: Prévia da Aplicação</a> |
   <a href="#rocket-tecnologias-usadas"> :rocket: Tecnologias Usadas</a> |
