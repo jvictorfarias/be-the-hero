@@ -15,7 +15,7 @@
   <a href="#-prévia"> :fire: Prévia da Aplicação</a> |
   <a href="#-project"> :rocket: Tecnologias Usadas</a> |
   <a href="#-how-to-contribute">🤔 How to contribute</a> |
-  <a href="#-how-to-run">🔖 How to run</a> |
+  <a href="#-how-to-run">🔖 How to run </a> |
 </p>
 
 
