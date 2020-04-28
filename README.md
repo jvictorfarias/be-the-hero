@@ -1,7 +1,7 @@
-<h4 align="center" style="border-bottom: 1px solid #eee; margin: 20px 0; padding-bottom: 10px;">
+<h1 align="center" style="border-bottom: 1px solid #eee; margin: 20px 0; padding-bottom: 10px;">
 <img src="./img/logo.svg" width="400px" alt="logo" /><br>
- <b>Be a hero!</b> 🦸‍♂️
-</h4>
+<p>Seja um herói! 🦸‍♂️</p>
+</h1>
 
 <div align="center">
 
@@ -10,11 +10,23 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jvictorfarias/be-the-hero)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/749225ed-51f3-4f2b-85be-5a8eb32897f0/deploy-status)](https://app.netlify.com/sites/bethehero-jvictorfarias/deploys)
 
+<p align="center">
+  <a href="#-sobre-o-projeto"> :bookmark_tabs: Sobre o Projeto</a> |
+  <a href="#-prévia"> :fire: Prévia da Aplicação</a> |
+  <a href="#-project"> :rocket: Tecnologias Usadas</a> |
+  <a href="#-how-to-contribute">🤔 How to contribute</a> |
+  <a href="#-how-to-run">🔖 How to run</a> |
+</p>
+
+
 </div>
 
-<br>
+## :bookmark_tabs: Sobre o Projeto
 
-### :fire: Preview
+***Be The Hero*** é um projeto que tem como foco ajudar as ONGs(Organizações Não Governamentais) a angariar fundos para os seus projetos, e o nome se dá pela possibilidade de você contribuir com os objetivos e projetos das ONGs e se tornar um herói com isso!
+
+
+## :fire: Prévia da Aplicação
 
 <div align="center">
 
@@ -22,12 +34,13 @@
 
 </div>
 
-### :rocket: Technologies used
+## :rocket: Tecnologias Usadas
 
-This project was made with the following technologies:
+O projeto foi desenvolvido usando as seguintes tecnologias:
 
 - [NodeJS](https://nodejs.org/en/)
 - [ReactJS](https://pt-br.reactjs.org/)
+- [ReactNative](https://reactnative.dev/)
 - [ExpressJS](https://expressjs.com/pt-br/)
 - [JWT](https://jwt.io/)
 - [Knex](http://knexjs.org/)
@@ -35,13 +48,15 @@ This project was made with the following technologies:
 - [Sucrase](https://sucrase.io/)
 - [Styled-Components](https://styled-components.com/)
 
-### :fire: The Project
 
-<b>Be the Hero</b> it's a project that focus on helping ONGs to raise fundings for their projects and turn yourself in a hero by helping them to accomplish their goals!
+## :outbox_tray: Como Contribuir?
 
-### :memo: License
 
-This project is developed unde the MIT license. See the [LICENSE](LICENSE.md) file to know more details.
+## :hammer: Executando o Projeto
+
+## :memo: Licença
+
+Este projeto foi desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes.
 
 <p align="center" style="margin-top: 20px;">
   <img src="./img/heroes.png" width="400px" alt="heroes" />
