@@ -12,10 +12,11 @@
 
 <p align="center">
   <a href="#bookmark_tabs-sobre-o-projeto"> :bookmark_tabs: Sobre o Projeto</a> |
-  <a href="#-previa"> :fire: Prévia da Aplicação</a> |
-  <a href="#-project"> :rocket: Tecnologias Usadas</a> |
-  <a href="#-how-to-contribute">🤔 Como Contribuir?</a> |
-  <a href="#-how-to-run">🔖 Executando o Projeto </a> |
+  <a href="#fire-prévia-da-aplicação"> :fire: Prévia da Aplicação</a> |
+  <a href="#rocket-tecnologias-usadas"> :rocket: Tecnologias Usadas</a> |
+  <a href="#hammer-deploy-da-aplicação"> :hammer: Deploy da Aplicação</a> |
+  <a href="#thinking-como-contribuir?"> :thinking: Como Contribuir?</a> |
+  <a href="#zap-executando-o-projeto"> :zap: Executando o Projeto </a> |
 </p>
 
 
@@ -49,10 +50,11 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 - [Styled-Components](https://styled-components.com/)
 
 
-## 🤔 Como Contribuir?
+## :thinking: Como Contribuir?
 
+## :hammer: Deploy da Aplicação
 
-## :hammer: Executando o Projeto
+## :zap: Executando o Projeto
 
 ## :memo: Licença
 
