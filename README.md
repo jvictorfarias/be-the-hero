@@ -83,7 +83,7 @@ https://be-the-hero-jvictorfarias.herokuapp.com/
 ## :zap: Executando o Projeto
 #### Clonando o projeto
 ```sh
-$ git clone https://github.com/wesleyfeitosa/be-the-hero.git
+$ git clone https://github.com/jvictorfarias/be-the-hero.git
 $ cd be-the-hero
 $ yarn
 ```
